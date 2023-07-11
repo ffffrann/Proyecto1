@@ -1,0 +1,23 @@
+<div>
+    {% extends "AppCoder/estudiantes.html" %}
+    {% load static %}
+
+    {% block setEstudiantes %}
+        <p>Crear Estudiante</p>
+        <form>
+            <table>
+                {{ miFormulario.as_table }}
+            </table>
+        <!--form action="/AppCoder/setEstudiantes/" method="post"> {% csrf_token %}
+            <input placeholder="Nombre" type = "text" name="nombre" required>
+            <input placeholder="Apellido" type = "text" name="apellido" required>
+            <input placeholder="Email" type= "email"  name="email" required-->
+
+            <input type = "submit" value="Enviar">
+        </form>
+        
+        <!--p>
+            {{ miFormulario.as_p }}
+        </p-->
+    {% endblock %}
+</div>
